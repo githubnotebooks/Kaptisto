@@ -1,0 +1,6 @@
+target("libs", function()
+    set_kind("shared")
+    add_packages("spdlog", "boost", "cli11")
+    add_includedirs("inc", { public = true })
+    add_files("src/**.cpp")
+end)

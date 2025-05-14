@@ -1,0 +1,30 @@
+# stylua.toml
+
+# 设定每个缩进的空格数
+indent_type = "Spaces"
+indent_width = 4
+
+# 是否使用 LF 作为换行符
+line_endings = "Unix"
+
+# 设置每行的最大字符数
+max_line_length = 80
+
+# 是否将空行合并
+merge_empty_lines = true
+
+# 是否在文件的开头添加 BOM
+add_bom = false
+
+# 格式化时保留的空格
+preserve_inline_comment_spacing = true
+
+# 自动格式化块注释
+format_comment = true
+
+# 自动换行
+wrap_long_lines = true
+
+# 其他配置
+quote_style = "AutoPreferDouble"
+

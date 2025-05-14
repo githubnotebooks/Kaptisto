@@ -1,0 +1,7 @@
+.cache
+.xmake
+build
+tools/bin/*
+tools/lib/*
+
+

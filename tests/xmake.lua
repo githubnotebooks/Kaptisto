@@ -1,0 +1,20 @@
+target("unit", function()
+    set_kind("binary")
+    add_deps("libs")
+    add_files("unit/**.cpp")
+    add_packages("gtest")
+end)
+
+target("benchmark", function()
+    set_kind("binary")
+    add_deps("libs")
+    add_files("benchmark/**.cpp")
+    add_packages("benchmark")
+end)
+
+target("leak", function()
+    set_kind("shared")
+    add_packages("cpptrace")
+    add_files("leak/**.cpp")
+    add_includedirs("leak/inc");
+end)
