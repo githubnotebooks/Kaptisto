@@ -12,7 +12,7 @@
 #include <cmath>
 #include <complex>
 #include <cstdarg>
-#include <cstdbool>
+#include <cstddef>
 #include <cstdint>
 #include <cstdio>
 #include <cstdlib>
