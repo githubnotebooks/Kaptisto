@@ -52,6 +52,7 @@
             hardeningDisable = [ "fortify" ];
             packages = with pkgs; [
               xmake
+              git
               boost
               spdlog
               cli11
@@ -64,7 +65,6 @@
             ];
             shellHook = ''
               export MY_NIX_PROMPT=qt_proj
-              exec nu
             '';
           };
         });
