@@ -94,6 +94,7 @@ class ScreenshotWidget : public QWidget
         QString localPath = url.toLocalFile();
         QPixmap pix(localPath);
 
+        preview_->clear();
         if (pix.isNull())
         {
             preview_->setText("无法加载截图");
@@ -102,6 +103,8 @@ class ScreenshotWidget : public QWidget
         {
             preview_->resize(pix.size());
             preview_->setPixmap(pix);
+            preview_->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+            preview_->adjustSize();
 
             // 替换文件名中的空格为下划线（直接操作路径字符串）
             QString newPath = localPath;

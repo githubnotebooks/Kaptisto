@@ -1,0 +1,8 @@
+target("Kaptisto", function()
+    set_kind("binary")
+    add_rules("qt.widgetapp")
+    add_deps("libs")
+    add_packages("spdlog", "boost", "cli11")
+    add_includedirs("../libs/inc", { public = true })
+    add_files("kaptisto.cpp")
+end)
