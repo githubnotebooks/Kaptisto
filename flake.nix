@@ -51,6 +51,7 @@
           default = pkgs.mkShellNoCC {
             hardeningDisable = [ "fortify" ];
             packages = with pkgs; [
+              xmake
               boost
               spdlog
               cli11

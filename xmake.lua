@@ -30,7 +30,7 @@ platform_settings()
 global_deps_settings()
 
 add_includedirs("common", ".", { public = true })
-includes("tools", "libs", "tests", "examples", "app")
+includes("tools", "libs", "tests", "app")
 
 task("debug", function()
     set_category("action")
