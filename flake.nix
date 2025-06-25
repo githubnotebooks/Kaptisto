@@ -62,6 +62,9 @@
               qt6.full
               gcc15
               pkg-config
+              zlib
+              cmake
+              python313
             ];
             shellHook = ''
               export MY_NIX_PROMPT=qt_proj

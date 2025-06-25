@@ -15,12 +15,19 @@ local platform_settings = function()
 end
 
 local global_deps_settings = function()
-    add_requires("spdlog", { system = true, configs = { shared = true } })
-    add_requires("cli11", { system = true, configs = { shared = true } })
-    add_requires("gtest", { system = true, configs = { shared = true } })
-    add_requires("benchmark", { system = true, configs = { shared = true } })
-    add_requires("cpptrace", { system = true, configs = { shared = true } })
-    add_requires("boost", { system = true, configs = { shared = true, cmake = false } })
+    -- add_requires("spdlog", { system = true, configs = { shared = true } })
+    -- add_requires("cli11", { system = true, configs = { shared = true } })
+    -- add_requires("gtest", { system = true, configs = { shared = true } })
+    -- add_requires("benchmark", { system = true, configs = { shared = true } })
+    -- add_requires("cpptrace", { system = true, configs = { shared = true } })
+    -- add_requires("boost", { system = true, configs = { shared = true, cmake = false } })
+
+    add_requires("spdlog", { system = true })
+    add_requires("cli11", { system = true })
+    add_requires("gtest", { system = true })
+    add_requires("benchmark", { system = true })
+    add_requires("cpptrace", { system = true })
+    add_requires("boost", { system = true })
 
     if is_mode("debug") then
         add_defines("SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE")
