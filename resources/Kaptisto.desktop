@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Kaptisto
+Exec=kaptisto
+Icon=kaptisto
+Terminal=false
+Categories=Utility;
